@@ -15,14 +15,14 @@ coco_data = {"info": {}, "licenses": [], "categories": [], "images": [], "annota
 categories = ["cell"]
 coco_data["categories"].append({"id": 0, "name": "cell"})
 index = 0
-for root, dirs, files in os.walk("train"):
+for root, dirs, files in os.walk("../table/train"):
     for file in files:
         if ".json" in file:
             file_path = os.path.join(root, file)
             image_id = file.replace(".json", "")
             f = open(file_path)
             data = json.load(f)
-            image = cv2.imread(os.path.join("train", image_id + ".jpg"))
+            image = cv2.imread(os.path.join("../table/train", image_id + ".jpg"))
             h, w, _ = image.shape
             for cell in data:
                 class_id = 0
@@ -45,6 +45,6 @@ for root, dirs, files in os.walk("train"):
                 coco_data["annotations"].append(annotation_info)
             f.close()
 
-output_file_path = "train.json"
+output_file_path = "../table/train.json"
 with open(output_file_path, "w", encoding="utf-8") as output_file:
     json.dump(coco_data, output_file, ensure_ascii=True, indent=4)
