@@ -56,3 +56,6 @@ table/
 cd cell_detection
 ./train.sh
 ```
+# Inference
+* Inference notebook: https://www.kaggle.com/code/huyduong7101/vhac2023-ocr-inference
+* Weights: https://www.kaggle.com/datasets/quan0095/tablerecognitionmodel
