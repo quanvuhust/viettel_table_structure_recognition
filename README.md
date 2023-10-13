@@ -29,7 +29,7 @@ pip install opencv-python termcolor yacs pyyaml scipy
 ```
 * Compile CUDA operators cho internimage:
 ```
-cd ./ops_dcnv3
+cd viettel_table_structure_recognition/cell_detection/ops_dcnv3
 sh ./make.sh
 ```
 # Huấn luyện mô hình
