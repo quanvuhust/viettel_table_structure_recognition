@@ -59,3 +59,6 @@ cd cell_detection
 # Inference
 * Inference notebook: https://www.kaggle.com/code/huyduong7101/vhac2023-ocr-inference
 * Weights: https://www.kaggle.com/datasets/quan0095/tablerecognitionmodel
+# Authors
+Vũ Minh Quân (quanvm4@viettel.com.vn)\
+Lê Huy Dương (duonglh9@viettel.com.vn)
